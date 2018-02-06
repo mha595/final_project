@@ -1,8 +1,5 @@
 # Data cleaning, final project
 
-
-
-setwd("/Users/muhammadhamidahmed/Desktop/Coursera/Getting and cleaning data/Final project")
 # reading data..
 
 # traning data set 
@@ -68,3 +65,6 @@ for (a in 1:6){
 
 
 f_means <- do.call("rbind", split_mean)    # final data
+
+write.table(f_means, file = "final_data.txt", row.names = FALSE)
+
